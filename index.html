@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="assets/javascript/game.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Crystals Collector!</h1>      
+  </div>
+</div>
+
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading" style="text-align: center;">Instructions</div>
+        <div class="panel-body">You will be given a random number at the start of the game. <br><br> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. <br><br> You win the game by matching your total score to the random number and lose the game if your total score goes above the random number. <br><br> The value of each crystal is hidden from you until you click on it. <br><br> Each time the game starts, the game will change the values of each crystal.</div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading" style="text-align: center;">RANDOM NUMBER GENERATED</div>
+        <div class="panel-body">
+          <p id="randomNumberGenerated" style="font-size: 50px;"></p>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading" style="text-align: center;">Record</div>
+        <div class="panel-body">
+        <div>Wins: <p id="wins" style="display: inline;"></p></div>
+        <div>Losses: <p id="losses" style="display: inline;"></p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-body"><button id="first-image" class="img-responsive"><img src="assets/images/fourth-image.jpg" style="width:100%" alt="Image"></button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3"> 
+      <div class="panel panel-primary">
+        <div class="panel-body"><button id="second-image" class="img-responsive"><img src="assets/images/second-image.jpg" style="width:100%" alt="Image"></button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3"> 
+      <div class="panel panel-primary">
+        <div class="panel-body"><button id="third-image" class="img-responsive"><img src="assets/images/third-image.png" style="width:100%" alt="Image"></button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3"> 
+      <div class="panel panel-primary">
+        <div class="panel-body"><button id="fourth-image" class="img-responsive"><img src="assets/images/first-image.png" style="width:100%" alt="Image"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div><br>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="panel panel-primary">
+        <div class="panel-heading" style="text-align: center;">TOTAL SCORE</div>
+        <div class="panel-body">
+        <p id="totalScore" style="font-size: 50px;">0</p>  
+
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<footer class="container-fluid text-center">
+  <p>Copyright &#169 Joel Franco</p>  
+</footer>
+
+</body>
+</html>
