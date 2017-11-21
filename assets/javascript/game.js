@@ -13,7 +13,14 @@ var fourthRandomImageNumber = Math.floor(Math.random() * 12) + 1;
 
 
 function reset(){
-
+    randomNumberGenerated = Math.floor(Math.random() *120) + 19;
+    firstRandomImageNumber = Math.floor(Math.random() * 12) + 1;
+    secondRandomImageNumber = Math.floor(Math.random() * 12) + 1;
+    thirdRandomImageNumber = Math.floor(Math.random() * 12) + 1;
+    fourthRandomImageNumber = Math.floor(Math.random() * 12) + 1;
+    currentRandomNumber = $("#randomNumberGenerated").text(randomNumberGenerated);
+    totalScore = 0
+    $("#totalScore").text(totalScore);  
 }
 
 firstRandomImageNumber;
